@@ -91,6 +91,22 @@ async def root():
         "health": "/health"
     }
 
+@app.get(api_v1)
+async def api_v1_root():
+    return {
+        "status": "online",
+        "api_version": "v1",
+        "endpoints": [
+            f"{api_v1}/products",
+            f"{api_v1}/currencies",
+            f"{api_v1}/auth/login",
+            f"{api_v1}/auth/register",
+            f"{api_v1}/wallet",
+            f"{api_v1}/sales",
+            f"{api_v1}/withdrawals"
+        ]
+    }
+
 @app.get("/health")
 async def health_check():
     return {"status": "ok", "version": settings.VERSION}
