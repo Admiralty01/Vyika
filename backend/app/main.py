@@ -80,7 +80,17 @@ app.include_router(notifications_router, prefix=api_v1)
 app.include_router(admin_router, prefix=api_v1)
 app.include_router(audit_router, prefix=api_v1)
 
-# Health check
+# Root & Health check
+@app.get("/")
+async def root():
+    return {
+        "name": settings.PROJECT_NAME,
+        "status": "online",
+        "version": settings.VERSION,
+        "docs": "/docs",
+        "health": "/health"
+    }
+
 @app.get("/health")
 async def health_check():
     return {"status": "ok", "version": settings.VERSION}
