@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000000" rx="24"/>
+  <!-- Upper Left Flared Curve -->
+  <path d="M 45 42 C 60 28, 80 32, 92 48" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Upper Right Flared Curve -->
+  <path d="M 155 42 C 140 28, 120 32, 108 48" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Outer V Frame -->
+  <path d="M 52 40 L 100 132 L 148 40" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Inner Y Stem and Left Wing -->
+  <path d="M 75 35 Q 88 60 100 85 L 100 130" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Inner Y Right Wing -->
+  <path d="M 125 35 Q 112 60 100 85" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bottom Smile Base Arc -->
+  <path d="M 60 142 Q 100 162 140 142" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  <!-- VYIKA Text -->
+  <text x="100" y="180" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="20" letter-spacing="6" font-weight="500">VYIKA</text>
+</svg>
